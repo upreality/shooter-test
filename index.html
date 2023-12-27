@@ -3,9 +3,31 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>space-shooter</title>
+	<title>Space Wars</title>
     <link rel="shortcut icon" href="TemplateData/img/favicon.ico">
     <link rel="stylesheet" href="TemplateData/css/style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-9YE32457CJ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){ dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-9YE32457CJ', {
+			cookie_flags: 'SameSite=None;Secure',
+			'custom_map': {'dimension2': 'ab_test_property_setup'}
+			}
+		);
+	</script>
+	<script>
+		window.onerror = function(message, source, lineno, colno, error) {
+			var errorDetails = error? error.stack : ('Script: '+ source + ' Line:'+ lineno + ' Column: '+ colno +' Message: '+ message);
+			gtag('event', 'exception', {
+			  'description': errorDetails,
+			  'fatal': true
+			});
+		}
+	</script>
+	
 </head>
 <body>
   
@@ -20,7 +42,7 @@
 <!--				</span>-->
 			
 				<div id="progressBar">
-					<div>LOADING ...</div>
+					<div id="loadingText">...</div>
 					<div class="centered">
 						<div id="emptyBar"></div>
 						<div id="fullBar"></div>
@@ -136,15 +158,15 @@
 		var isChrome =  isIOSChrome || (isChromium !== null && typeof isChromium !== "undefined" && vendorName === "Google Inc." && isOpera === false && isIEedge === false);
 		
 		var buildUrl = "Build";
-		var loaderUrl = buildUrl + "/SS2.loader.js";
+		var loaderUrl = buildUrl + "/SSTest_1_2.loader.js";
 		var config = {
-        dataUrl: buildUrl + "/SS2.data",
-        frameworkUrl: buildUrl + "/SS2.framework.js",
-        codeUrl: buildUrl + "/SS2.wasm",
+        dataUrl: buildUrl + "/SSTest_1_2.data",
+        frameworkUrl: buildUrl + "/SSTest_1_2.framework.js",
+        codeUrl: buildUrl + "/SSTest_1_2.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Upreality",
-        productName: "space-shooter",
-        productVersion: "0.1",
+        productName: "Space Wars",
+        productVersion: "0.1.2",
       };
 
 		var container = document.querySelector("#gameContainer");
@@ -153,6 +175,7 @@
 		var progressBarFull = document.querySelector("#fullBar");
 		var progressBarEmpty = document.querySelector("#emptyBar");
 		var fullscreenButton = document.querySelector("#fullScreenButton");
+		var progressBarText = document.querySelector("#loadingText");
 
 		if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
 			container.className = "unity-mobile";
