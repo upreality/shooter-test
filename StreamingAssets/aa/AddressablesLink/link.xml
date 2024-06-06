@@ -15,7 +15,9 @@
     <type fullname="Features.Balance.presentation.ui.ReactiveBalanceTMPText" preserve="all" />
   </assembly>
   <assembly fullname="Lobby, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="Features.Lobby.presentation.GameListItemController" preserve="all" />
     <type fullname="Features.Lobby.presentation.GameListItemControllerPool" preserve="all" />
+    <type fullname="Features.Lobby.presentation.GameListScreen" preserve="all" />
   </assembly>
   <assembly fullname="LPSP, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="InfimaGames.LowPolyShooterPack.BoltBehaviour" preserve="all" />
@@ -68,9 +70,9 @@
     <type fullname="InfimaGames.LowPolyShooterPack.Weapon" preserve="all" />
     <type fullname="InfimaGames.LowPolyShooterPack.WeaponAnimationEventHandler" preserve="all" />
     <type fullname="InfimaGames.LowPolyShooterPack.WeaponAttachmentManager" preserve="all" />
+    <type fullname="InfimaGames.LowPolyShooterPack.ReloadIKData" preserve="nothing" serialized="true" />
     <type fullname="InfimaGames.LowPolyShooterPack.FeelState" preserve="nothing" serialized="true" />
     <type fullname="InfimaGames.LowPolyShooterPack.SwayDirection" preserve="nothing" serialized="true" />
-    <type fullname="InfimaGames.LowPolyShooterPack.ReloadIKData" preserve="nothing" serialized="true" />
     <type fullname="InfimaGames.LowPolyShooterPack.AudioSettings" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="LPSP_Tools, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
@@ -213,6 +215,12 @@
     <type fullname="TMPro.TextMeshProUGUI" preserve="all" />
     <type fullname="TMPro.TMP_FontAsset" preserve="all" />
     <type fullname="TMPro.TMP_InputField" preserve="all" />
+    <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
+    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
     <type fullname="TMPro.FaceInfo_Legacy" preserve="nothing" serialized="true" />
     <type fullname="TMPro.FontAssetCreationSettings" preserve="nothing" serialized="true" />
     <type fullname="TMPro.KerningTable" preserve="nothing" serialized="true" />
@@ -220,12 +228,6 @@
     <type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true" />
     <type fullname="TMPro.TMP_Glyph" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_InputField/SelectionEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_InputField/SubmitEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_InputField/TextSelectionEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.TMP_InputField/TouchScreenKeyboardEvent" preserve="nothing" serialized="true" />
-    <type fullname="TMPro.VertexGradient" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEditor.Audio.AudioMixerSnapshotController" preserve="all" />
@@ -268,13 +270,13 @@
     <type fullname="UnityEngine.Texture2D" preserve="all" />
     <type fullname="UnityEngine.TrailRenderer" preserve="all" />
     <type fullname="UnityEngine.Transform" preserve="all" />
-    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent`1[InfimaGames.LowPolyShooterPack.ShootEventData]" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.ArgumentCache" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent`1[System.Boolean]" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.Events.UnityEvent`1[InfimaGames.LowPolyShooterPack.ShootEventData]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.ParticleSystem" preserve="all" />
